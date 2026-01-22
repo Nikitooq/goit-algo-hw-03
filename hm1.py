@@ -5,7 +5,7 @@ def get_days_from_today(date):
     try:
         date_to_string = datetime.strptime(date, "%Y-%m-%d")
     except ValueError:
-        print("Format of the date must be: YYYY-MM-DD")
+        return
     date_difference = (today - date_to_string)
     return date_difference.days
 
