@@ -14,4 +14,4 @@ def get_numbers_ticket(min, max, quantity):
             random_numbers.add(number)
     return sorted(random_numbers)
 
-print(get_numbers_ticket(-10, 10, 5))
+print(get_numbers_ticket(10, 4, 5))
