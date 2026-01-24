@@ -2,13 +2,14 @@ import random
 
 def get_numbers_ticket(min, max, quantity):
     random_numbers = set()
+    not_valid_number = []
     while  len(random_numbers) < quantity:
-        if min < 1:
-            break
-            return None
+        if max < min:
+            return not_valid_number
+        elif min < 1:
+            return not_valid_number
         elif max > 1000:
-            break
-            return None
+            return not_valid_number
         else:
             number = random.randint(min, max)
             random_numbers.add(number)
